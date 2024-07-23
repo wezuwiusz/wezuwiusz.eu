@@ -1,0 +1,352 @@
+:root {
+	--md-sys-color-primary: rgb(144 74 69);
+	--md-sys-color-surface-tint: rgb(144 74 69);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(255 218 214);
+	--md-sys-color-on-primary-container: rgb(59 9 8);
+	--md-sys-color-secondary: rgb(119 86 83);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(255 218 214);
+	--md-sys-color-on-secondary-container: rgb(44 21 19);
+	--md-sys-color-tertiary: rgb(114 91 46);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(254 222 166);
+	--md-sys-color-on-tertiary-container: rgb(38 25 0);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(65 0 2);
+	--md-sys-color-background: rgb(255 248 247);
+	--md-sys-color-on-background: rgb(35 25 24);
+	--md-sys-color-surface: rgb(255 248 247);
+	--md-sys-color-on-surface: rgb(35 25 24);
+	--md-sys-color-surface-variant: rgb(245 221 219);
+	--md-sys-color-on-surface-variant: rgb(83 67 66);
+	--md-sys-color-outline: rgb(133 115 113);
+	--md-sys-color-outline-variant: rgb(216 194 191);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(57 46 45);
+	--md-sys-color-inverse-on-surface: rgb(255 237 235);
+	--md-sys-color-inverse-primary: rgb(255 179 172);
+	--md-sys-color-primary-fixed: rgb(255 218 214);
+	--md-sys-color-on-primary-fixed: rgb(59 9 8);
+	--md-sys-color-primary-fixed-dim: rgb(255 179 172);
+	--md-sys-color-on-primary-fixed-variant: rgb(115 51 47);
+	--md-sys-color-secondary-fixed: rgb(255 218 214);
+	--md-sys-color-on-secondary-fixed: rgb(44 21 19);
+	--md-sys-color-secondary-fixed-dim: rgb(231 189 184);
+	--md-sys-color-on-secondary-fixed-variant: rgb(93 63 60);
+	--md-sys-color-tertiary-fixed: rgb(254 222 166);
+	--md-sys-color-on-tertiary-fixed: rgb(38 25 0);
+	--md-sys-color-tertiary-fixed-dim: rgb(225 195 140);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(88 68 25);
+	--md-sys-color-surface-dim: rgb(232 214 212);
+	--md-sys-color-surface-bright: rgb(255 248 247);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(255 240 239);
+	--md-sys-color-surface-container: rgb(252 234 232);
+	--md-sys-color-surface-container-high: rgb(246 228 226);
+	--md-sys-color-surface-container-highest: rgb(241 222 220);
+}
+
+body {
+	font-family: Inter, -system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+	line-height: 1.625;
+	background-color: var(--md-sys-color-surface);
+	color: var(--md-sys-color-on-surface);
+	padding: 0;
+	margin: 0;
+}
+
+.website-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("./img/vesuvius.webp");
+	background-size: cover;
+	background-position-y: center;
+}
+
+.website-header a {
+	text-decoration: none;
+}
+
+.website-header > div {
+	margin: 4rem 0;
+	display: flex;
+	align-items: center;
+}
+
+.wezuwiusz-logo {
+	margin-right: 2rem;
+}
+
+header h1 {
+	margin: 0;
+	color: white;
+	font-size: 4rem;
+	line-height: 1.25;
+}
+
+main {
+	width: 80%;
+	margin: 2rem auto;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.wezuwiusz-intro {
+	font-weight: 400;
+}
+
+.wezuwiusz-intro b {
+	display: block;
+}
+
+.support-link {
+	display: block;
+	margin-top: 1rem;
+	color: var(--md-sys-color-on-surface);
+}
+
+.app-description {
+	font-size: 1.25rem;
+}
+
+.split {
+	display: flex;
+}
+
+.split__left-pane {
+	width: 40%;
+}
+
+.split__right-pane {
+	width: 60%;
+	margin-left: 8rem;
+}
+
+.wezuwiusz-why, .blog-header, .contact-header {
+	font-size: 2rem;
+}
+
+.reasons__row {
+	display: flex;
+	gap: 2rem;
+}
+
+.reasons {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.reason {
+	width: 50%;
+	display: flex;
+	background-color: var(--md-sys-color-primary-container);
+	color: var(--md-sys-color-on-primary-container);
+	padding: 1.5rem;
+	border-radius: 2rem;
+}
+
+.reason svg {
+	margin-right: 2rem;
+	width: 15%;
+}
+
+.reason > div {
+	width: 85%;
+}
+
+.reason header {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.reason p {
+	margin-top: .5rem;
+	margin-bottom: 0;
+}
+
+a {
+	color: inherit;
+}
+
+button, .button {
+	border-radius: 100px;
+	background-color: var(--md-sys-color-primary);
+	border: none;
+	color: var(--md-sys-color-on-primary);
+	padding: 10px 24px;
+	font-weight: 500;
+	font-family: inherit;
+	font-size: 1rem;
+	text-decoration: none;
+	height: min-content;
+	display: inline-block;
+}
+
+.screenshots {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.screenshots a {
+	width: 30%;
+}
+
+.screenshots img {
+	width: 100%;
+}
+
+.article-card {
+	display: block;
+	text-decoration: none;
+	background-color: var(--md-sys-color-primary-container);
+	color: var(--md-sys-color-on-primary-container);
+	padding: 1.5rem;
+	border-radius: 2rem;
+}
+
+.article-card header {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.article-card p {
+	margin: .25rem 0 0;
+	max-width: 70%;
+}
+
+.blog__archive {
+	margin: 2rem;
+	text-align: center;
+}
+
+.blog__archive a {
+	color: inherit;
+}
+
+.contact-info a {
+	color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--md-sys-color-primary: rgb(255 179 172);
+		--md-sys-color-surface-tint: rgb(255 179 172);
+		--md-sys-color-on-primary: rgb(87 30 26);
+		--md-sys-color-primary-container: rgb(115 51 47);
+		--md-sys-color-on-primary-container: rgb(255 218 214);
+		--md-sys-color-secondary: rgb(231 189 184);
+		--md-sys-color-on-secondary: rgb(68 41 39);
+		--md-sys-color-secondary-container: rgb(93 63 60);
+		--md-sys-color-on-secondary-container: rgb(255 218 214);
+		--md-sys-color-tertiary: rgb(225 195 140);
+		--md-sys-color-on-tertiary: rgb(63 45 4);
+		--md-sys-color-tertiary-container: rgb(88 68 25);
+		--md-sys-color-on-tertiary-container: rgb(254 222 166);
+		--md-sys-color-error: rgb(255 180 171);
+		--md-sys-color-on-error: rgb(105 0 5);
+		--md-sys-color-error-container: rgb(147 0 10);
+		--md-sys-color-on-error-container: rgb(255 218 214);
+		--md-sys-color-background: rgb(26 17 16);
+		--md-sys-color-on-background: rgb(241 222 220);
+		--md-sys-color-surface: rgb(26 17 16);
+		--md-sys-color-on-surface: rgb(241 222 220);
+		--md-sys-color-surface-variant: rgb(83 67 66);
+		--md-sys-color-on-surface-variant: rgb(216 194 191);
+		--md-sys-color-outline: rgb(160 140 138);
+		--md-sys-color-outline-variant: rgb(83 67 66);
+		--md-sys-color-shadow: rgb(0 0 0);
+		--md-sys-color-scrim: rgb(0 0 0);
+		--md-sys-color-inverse-surface: rgb(241 222 220);
+		--md-sys-color-inverse-on-surface: rgb(57 46 45);
+		--md-sys-color-inverse-primary: rgb(144 74 69);
+		--md-sys-color-surface-dim: rgb(26 17 16);
+		--md-sys-color-surface-bright: rgb(66 55 53);
+		--md-sys-color-surface-container-lowest: rgb(20 12 11);
+		--md-sys-color-surface-container-low: rgb(35 25 24);
+		--md-sys-color-surface-container: rgb(39 29 28);
+		--md-sys-color-surface-container-high: rgb(50 40 38);
+		--md-sys-color-surface-container-highest: rgb(61 50 49);
+	}
+}
+
+@media (max-width: 1960px) {
+	.reasons__row {
+		flex-direction: column;
+	}
+
+	.reason {
+		width: unset;
+	}
+}
+
+@media (max-width: 1337px) {
+	.screenshots {
+		flex-direction: column;
+	}
+
+	.screenshots a {
+		width: 60%;
+	}
+}
+
+@media (max-width: 850px) {
+	.split {
+		display: block;
+	}
+	.split__left-pane {
+		width: 100%;
+	}
+	.split__right-pane {
+		width: 100%;
+	}
+	.screenshots {
+		flex-direction: row;
+	}
+	.screenshots a {
+		width: 18%;
+	}
+	.split__right-pane {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.website-header > div {
+		text-align: center;
+		display: block;
+	}
+
+	.website-header img {
+		width: 50%;
+		margin-bottom: 1rem;
+	}
+
+	header h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.reason {
+		display: block;
+	}
+
+	.reason > div {
+		width: 100%;
+	}
+
+	.reason svg {
+		width: 48px;
+	}
+}
