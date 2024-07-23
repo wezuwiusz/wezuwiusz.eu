@@ -350,3 +350,29 @@ button, .button {
 		width: 48px;
 	}
 }
+
+@font-face {
+	font-display: swap;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/inter-v13-latin-ext-regular.woff2") format("woff2");
+}
+
+/* inter-600 - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	src: url("/fonts/inter-v13-latin-ext-600.woff2") format("woff2");
+}
+
+/* inter-700 - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/inter-v13-latin-ext-700.woff2") format("woff2");
+}
