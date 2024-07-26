@@ -330,6 +330,7 @@ button, .button {
 	.website-header img {
 		width: 50%;
 		margin-bottom: 1rem;
+		margin-right: 0rem;
 	}
 
 	header h1 {
