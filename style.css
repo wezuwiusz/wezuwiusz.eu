@@ -213,6 +213,7 @@ button, .button {
 	color: var(--md-sys-color-on-primary-container);
 	padding: 1.5rem;
 	border-radius: 2rem;
+	margin-bottom: 1rem;
 }
 
 .article-card header {
