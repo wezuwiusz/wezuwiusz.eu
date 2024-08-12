@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pl" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=yes, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dzienniczek Wezuwiusz Beta 2 - już dostępna!</title>
+	<link rel="stylesheet" href="../style.css">
+	<meta name="title" content="Dzienniczek Wezuwiusz Beta 2 - już dostępna!">
+	<meta name="description" content="Kolejny kamień milowy - Dzienniczek Wezuwiusz Beta 2 została wydana.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://wezuwiusz.eu/blog/beta-2-released.html">
+	<meta property="og:title" content="Dzienniczek Wezuwiusz Beta 2 - już dostępna!">
+	<meta property="og:description" content="Kolejny kamień milowy - Dzienniczek Wezuwiusz Beta 2 została wydana.">
+	<meta property="og:image" content="https://wezuwiusz.eu/img/ogpreview.png">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://wezuwiusz.eu/blog/beta-2-released.html">
+	<meta property="twitter:title" content="Dzienniczek Wezuwiusz Beta 2 - już dostępna!">
+	<meta property="twitter:description" content="Kolejny kamień milowy - Dzienniczek Wezuwiusz Beta 2 została wydana.">
+	<meta property="twitter:image" content="https://wezuwiusz.eu/img/ogpreview.png">
+	<script defer data-domain="wezuwiusz.eu" src="https://analytics.puffercat.xyz/js/script.js"></script>
+</head>
+<body>
+<header class="website-header">
+	<div>
+		<img src="../img/logo.svg" alt="Dzienniczek Wezuwiusz" aria-hidden="true" class="wezuwiusz-logo">
+		<a href="/"><h1>Dzienniczek<br>Wezuwiusz</h1></a>
+	</div>
+</header>
+<main>
+	<h2>Dzienniczek Wezuwiusz Beta 2 - już dostępna!</h2>
+	<p>
+		Druga beta Dzienniczka Wezuwiusz jest kolejną sporą aktualizacją do naszej aplikacji. W tym wydaniu
+		większość zmian mieści się po stronie samej aplikacji, a nie SDK, jak w Becie 1.
+		Co dodaliśmy od Bety 1?
+	</p>
+	<ul>
+		<li>Usprawniliśmy responsywność ekranu powitalnego.</li>
+		<li>Dodaliśmy wsparcie dla Android Auto.</li>
+		<li>Kontynuowaliśmy rebranding z Wulkanowego na Wezuwiusza: usunęliśmy informacje o finansowaniu oraz
+			poprawiliśmy wygląd drukowanej wiadomości. Poprawiliśmy też linki do GitHuba.
+		</li>
+		<li>Wprowadziliśmy usprawnienia dla tabletów: Navigation Rail zamiast Navbara na dole oraz większa średnia z
+			przedmiotu po prawej stronie widoku ocen.
+		</li>
+		<li>Usunęliśmy Google UMP (służące do zbierania pozwoleń użytkowników na personalizowane reklamy) oraz Huawei
+			Mobile Services.
+		</li>
+		<li>
+			Sforkowaliśmy biblioteki Wulkanowego takie jak AppKillerManager i material-chips-input.
+			Zaaktualizowaliśmy zależności biblioteki material-chips-input, która nie otrzymywała aktualizacji od 3 lat,
+			w tym przenieśliśmy ją na Javę 17 i Kotlina 2.0.
+		</li>
+		<li>Odświeżyliśmy ekran informujący o błędzie.</li>
+		<li>Dodaliśmy Nightly buildy naszej aplikacji. Są budowane przez GitHub Actions, a informacje o nowych wersjach
+			są wysyłane na thread <code>Nightly</code> na naszym kanale na Telegramie.
+		</li>
+		<li>Dodaliśmy kalkulator przyszłej średniej. Pozwala on obliczyć, jaką będziemy mieć średnią po wpisaniu
+			dowolnej oceny do naszego dziennika.
+		</li>
+		<li>Pliki APK są teraz podpisywane!</li>
+		<li>W SDK dodaliśmy eksperymentalne wsparcie dla systemów punktowych.</li>
+		<li>Wprowadziliśmy wsparcie dla anulowanych lekcji z powodu wycieczek szkolnych.</li>
+		<li>Zaaktualizowaliśmy headery wysyłane przez SDK, aby lepiej imitować oficjalną aplikację.</li>
+		<li>Scrapper po aktualizacji teraz będzie próbował skorzystać z najnowszych dostępnych mappingów, a do tej pory
+			nie korzystał z żadnych, widząc nieznaną dla siebie wersję dziennika. Czasami mappingi po aktualizacji
+			dziennika pozostają takie same.
+		</li>
+		<li>Naprawiliśmy wyświetlanie inicjałów, gdy displayName jest równy null. Dzięki, @tomaszk8266!</li>
+		<li>Naprawiliśmy bug, który uniemożliwiał zmienianie z pierwszego na trzeci semestr.</li>
+		<li>Dodaliśmy informację przy pierwszym starcie, że użytkownik ponosi pełną odpowiedzialność za użytkowanie
+			nieoficjalnej aplikacji.
+		</li>
+	</ul>
+	<h3>Usprawnienia dla tabletów</h3>
+	<a href="/img/blog/beta-2-released/tablet_view.webp">
+		<img src="/img/blog/beta-2-released/tablet_view.webp"
+			 alt="Zdjęcie tabletu, pokazującego widok ocen, ze średnią po prawej stronie oraz Navigation Rail zamiast Navbara w trybie tabletu."
+			 width="720">
+	</a>
+	<p>
+		Dzienniczek Wezuwiusz teraz pokazuje średnią po prawej stronie oraz posiada Navigation Rail w trybie
+		tabletu.<br>
+		Jest to część naszego długoterminowego planu, aby udoskonalać funkcjonowanie aplikacji na tabletach, które
+		pozostają
+		popularnym wyborem dla młodszych osób oraz w oświacie.
+	</p>
+	<h3>Nowy ekran błędu</h3>
+	<a href="/img/blog/beta-2-released/haiku_error.webp">
+		<img src="/img/blog/beta-2-released/haiku_error.webp"
+			 alt="Błąd w aplikacji, nad treścią samego błędu ale pod tytułem okna Haiku opisujące błąd."
+			 height="720">
+	</a>
+	<p>
+		Ekran błędu został udoskonalony. Można już go scrollować zarówno wertykalnie, jak i horyzontalnie. Do tej pory
+		możliwe było jedynie scrollowanie horyzontalne. <br>
+		Inspirując się przeglądarką <a href="https://8325.org/haiku/">NetPositive dla BeOS</a>, dodaliśmy również Haiku
+		opisujące napotkany błąd.
+	</p>
+	<h3>Kalkulator przyszłej średniej</h3>
+	<a href="/img/blog/beta-2-released/gpa_calculator.webp">
+		<img src="/img/blog/beta-2-released/gpa_calculator.webp"
+			 alt="Dialog, który pozwala obliczyć jaką średnią będziemy mieć po dodaniu oceny do naszego dziennika.">
+	</a>
+	<p>W zakładce z ocenami można dodana zostałą funkcja policzenia sobie średniej z dowolnego przedmiotu, po dodaniu
+		oceny. Przydatne, jeżeli chcemy przewidzieć, jaką będziemy mieć średnią.</p>
+	<h3>Co dalej?</h3>
+	<p>Gdybyś się mnie zapytał wczoraj, jaki mam plan na Wezuwiusza, to bym powiedział, że najprawdobodobnie przejdziemy
+		od razu z Bety 2 do Release Candidate. Jednak wraz z informacją o platformie eduVulcan, uważam, iż należy odwlec
+		pierwszy stable release, aż do momentu, gdy będziemy mieć pewność, że nasza aplikacja działa z tym właśnie
+		systemem.</p>
+	<p>Beta 3 zapewne będzie aktualizacją zawierające patche do współpracy z eduVulcanem. Pewno też powstanie Beta 4,
+		ale to zależy od ilości wprowadzonych zmian.</p>
+	<h3>Zaaktualizuj teraz!</h3>
+	<p>
+		Aplikacja dostępna jest do pobrania z <a
+			href="https://github.com/wezuwiusz/neowulkanowy/releases/tag/3.0.0-beta2">GitHuba</a> jak dotychczas, a
+		teraz również z naszego repozytorium F-Droida! Można dodać <a href="https://fdroid.wezuwiusz.eu/repo/">nasze
+		repozytorium</a> do aplikacji F-Droid na swoim telefonie, a następnie zainstalować aplikację ze sklepu.<br>
+		<b>Uwaga! Aplikację należy zainstalować od nowa w przypadku aktualizacji, gdyż to wydanie jest podpisywane
+			naszym kluczem, a wcześniejsze nie były.</b>
+	<p>
+		Miłego korzystania z aplikacji, wszelkie bug reporty prosimy zgłaszać na naszym chacie:
+		<a href="https://t.me/wezuwiuszchat">@wezuwiuszchat na Telegramie</a>.
+	</p>
+</main>
+</body>
+</html>
