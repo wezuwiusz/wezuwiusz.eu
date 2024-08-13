@@ -239,6 +239,10 @@ button, .button {
 	color: inherit;
 }
 
+.fixed-image {
+	max-width: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--md-sys-color-primary: rgb(255 179 172);
